@@ -1,0 +1,17 @@
+export interface Product {
+    department?: string,
+    sku?: number,
+    itemsInBox?: number,
+    productName?: string,
+    color?: string,
+    inStock?: boolean,
+    price?: number,
+    rating?: number,
+    description?: string,
+    imageUrl?: string,
+    category?: string,
+    discount?: number,
+    reviews?: number,
+    supplier?: string,
+    tags?: string[],
+  }

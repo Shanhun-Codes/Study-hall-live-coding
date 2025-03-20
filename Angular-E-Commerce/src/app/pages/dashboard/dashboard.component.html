@@ -1,0 +1,6 @@
+<h2>All Products</h2>
+<section>
+@for (p of products(); track p.sku) {
+    <app-item-card [data]="p" />
+}
+</section>

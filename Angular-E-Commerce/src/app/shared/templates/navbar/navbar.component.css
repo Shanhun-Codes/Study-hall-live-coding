@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   margin: .5em 1em;
+}
+button {
+    padding: 1em;
+    margin: .5em;
+    border-radius: 1em;
+    cursor: pointer;
+    min-width: 100px;
+}
+button:hover {
+box-shadow: 2px 5px;
+}
+

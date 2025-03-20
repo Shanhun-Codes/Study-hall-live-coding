@@ -1,0 +1,20 @@
+<section>
+  <article class="card-container">
+    <div class="img-container">
+      <img src="{{ data()?.imageUrl }}" alt="{{ data()?.productName }}" />
+    </div>
+    <div class="lower-card-container">
+      <div class="product-details">
+        <h3>{{ data()?.productName }}</h3>
+        <details>
+            <summary>see more...</summary>
+            <p>{{data()?.description}}</p>
+        </details>
+        <p>{{ data()?.price | currency }}</p>
+      </div>
+      <div class="button-container">
+        <button (click)="addCartHandler()">Add to Cart</button>
+      </div>
+    </div>
+  </article>
+</section>
