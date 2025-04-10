@@ -1,0 +1,38 @@
+<h2>Your Items</h2>
+<section>
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+          <th>Product:</th>
+          <th>Quantity:</th>
+          <th>Price:</th>
+
+        </tr>
+      </thead>
+  @for (p of itemsInCart(); track p.sku) {
+
+ <tbody>
+    <tr>
+      <td id="img-td">
+        <img [src]="p.imageUrl" [alt]="p.productName" />
+      </td>
+      <td>{{ p.productName }}</td>
+      <!-- <td>{{quantity()}}</td> -->
+      <td>{{ p.price | currency}}</td>
+      <td>
+        <button (click)="removeHandler(p)">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+  } @empty {
+  <p>No items in cart!</p>
+  }
+  <tbody>
+    <th></th>
+    <th>Total:</th>
+    <th>{{cartTotal() | currency}}</th>
+  </tbody>
+</table>
+</section>

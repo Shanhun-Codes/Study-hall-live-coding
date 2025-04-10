@@ -1,6 +1,21 @@
+@if (!filteredDepartments()) {
 <h2>All Products</h2>
 <section>
-@for (p of products(); track p.sku) {
+  @for (p of products(); track p.sku) {
+<app-item-card-container>
     <app-item-card [data]="p" />
-}
+    <button (click)="addToCartHandler(p)">Add to cart</button>
+</app-item-card-container>
+  }
 </section>
+} @else {
+<h2>{{ departmentSelection() }}</h2>
+<section>
+  @for (p of filteredDepartments(); track p.sku) {
+    <app-item-card-container>
+        <app-item-card [data]="p" />
+        <button (click)="addToCartHandler(p)">Add to Cart</button>
+    </app-item-card-container>
+  }
+</section>
+}

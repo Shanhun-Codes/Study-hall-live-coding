@@ -9,3 +9,16 @@ section {
 }
 
 
+button {
+    background-color: lightgreen;
+    border-radius: 2em;
+    font-size: 0.75em;
+    padding: 0.25em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+
+

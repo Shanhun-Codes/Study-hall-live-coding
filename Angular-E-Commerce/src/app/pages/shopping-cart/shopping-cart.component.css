@@ -1,0 +1,40 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 95%;
+  border: solid;
+  border-collapse: collapse;
+}
+
+tbody,
+tr {
+  max-height: 50px;
+}
+
+td {
+  width: 25%;
+  padding: 8px;
+  text-align: center;
+  border: solid;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#img-td {
+  overflow: hidden;
+}
+
+#img-td img {
+  max-height: 100px;
+
+  object-fit: contain;
+}
+
+table > * {
+  text-align: center;
+}

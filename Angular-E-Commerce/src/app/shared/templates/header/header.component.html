@@ -1,10 +1,8 @@
 <header>
-  <h1>E-commerce</h1>
-  <input type="text" class="search-bar" placeholder="Search 🔎" />
+  <h1 (click)="resetHandler()" routerLink="">E-commerce</h1>
+  <input (input)="searchHandler()" [(ngModel)]="searchInput" type="text" class="search-bar" placeholder="Search 🔎" />
   <ul>
-    <!-- <li>About Us</li>
-    <li>Socials</li> -->
-    <li>Shopping Cart 0</li>
+    <a routerLink="/shopping-cart">Cart {{ shoppingCart().length }}</a>
   </ul>
 </header>
-<app-navbar  />
+<app-navbar />

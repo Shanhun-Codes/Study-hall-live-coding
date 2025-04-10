@@ -14,12 +14,7 @@ header {
     font-size: 1em;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
 
-li {
-    list-style-type: none;
+h1:hover {
+    cursor: pointer;
 }

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { DepartmentProductsComponent } from './department-products/department-products.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 
 
 export const routes: Routes = [
@@ -9,9 +9,7 @@ export const routes: Routes = [
         component: DashboardComponent,
     },
     {
-        path: "department-products/:department",
-        component: DepartmentProductsComponent
-    },
-  
-
+        path: 'shopping-cart',
+        component: ShoppingCartComponent
+    }
 ];

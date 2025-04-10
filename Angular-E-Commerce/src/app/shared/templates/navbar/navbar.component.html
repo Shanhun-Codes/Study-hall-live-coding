@@ -1,6 +1,7 @@
 <nav>
-    @for (d of getDepartmentNames(); track d) {
-        <button>{{d}}</button>
+    <a routerLink='' (click)="allProductsHandler()">All Products</a>
+    @for (d of getDepartmentNamesHandler(); track d) {
+        <a routerLink="" (click)="depClickHandler(d!)">{{d}}</a> 
     }
 </nav>
 

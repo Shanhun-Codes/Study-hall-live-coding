@@ -1,13 +1,4 @@
-section {
-  text-align: center;
-  border: solid 1px black;
-  border-radius: 4em;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 200px;
-  height: 210px;
-  scroll-behavior: smooth;
-}
+
 
 section::-webkit-scrollbar {
     display: none;
@@ -58,15 +49,3 @@ summary:hover {
   cursor: pointer;
 }
 
-button {
-  margin: 0.5em;
-  background-color: lightgreen;
-  border-radius: 2em;
-  font-size: 0.75em;
-  padding: 0.25em;
-  cursor: pointer;
-}
-
-button:hover {
-  transform: scale(1.05);
-}

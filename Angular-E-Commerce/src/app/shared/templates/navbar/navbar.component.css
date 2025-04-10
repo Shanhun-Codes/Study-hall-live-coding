@@ -1,17 +1,16 @@
 nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
    margin: .5em 1em;
+   border-bottom: solid 1px;
 }
-button {
-    padding: 1em;
-    margin: .5em;
-    border-radius: 1em;
-    cursor: pointer;
-    min-width: 100px;
+
+a {
+    padding: .15em 1em;
+    border-right: solid 1px;
 }
-button:hover {
-box-shadow: 2px 5px;
-}
+
+
+
 
